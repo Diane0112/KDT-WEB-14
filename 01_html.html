@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML기초</title></title>
 </head>
-<body>
+<>
    <h1>h1태그 입니다.</h1>
    <h2>h2태그 입니다.</h2>
    <h3>h3태그 입니다.</h3>
@@ -40,5 +40,94 @@
    <del>중간줄(최소선)</del>
    <u>밑줄</u>
   
+<img src="./images.jpg" alt="images">
+<!-- 상대경로 : 현재 파일의 위치 기준-->
+<img src="C:/Users/Visitor/Desktop/KDT-WEB-14/images.jpg" alt="images">
+<!-- 절대경로 : 서버의 처음 주소부터 접근 -->
+ <img src="/images.jpg"> 
+ <!-- pc의 절대 경로-->
+<br>
+<a href="https://www.naver.com">네이버</a>
+
+<a href="https://www.naver.com" target="blank">네이버</a>
+<a href="https://www.naver.com" target="slef">네이버</a>
+<form>
+  <input type="button" value="버튼"/>
+  <input type="text"placeholder></input>
+  <input type="password"placeholder></input>
+  <input type="checkbox"name="fruits" value="apple"checked/>사과
+  <input type="checkbox"name="fruits" value="barnana"/>바나나
+  <!--radio=하나만 선택가능-->
+  <!--name,value : checkbox와 동일-->
+  <input type="radio" name="gender" value="man"checked/>남자
+  <input type="radio"name="gender" value="woman"></input>여자
+  <input type="date"></input>
+  <input type="datetime-local"></input>
+
+
+  <!--select-->
+<select>
+  <optgroup label="커피">
+    <option value="americano">아메리키노</option>
+    <option value="cafeLatte" selected>카페라떼</option>
+    <option value="espresso">에스프레소</option>
+  </optgroup>
+<optgroup label="티">
+  <option value="earlgray">얼그레이</option>
+  <option value=""></option>
+  <option value=""></option>
+</optgroup>
+
+</select>
+
+</form>
+
+<!--tabel-->
+<!--rowspan : 해당 칸이 점유 하는 행의 수 지정-->
+<!--colspan : 해당 칸의 -->
+<table border="1" cellspacing="0" cellpadding="5" width="300" height="100">
+<tr>
+  <th>이름</th>
+  <th>나이</th>
+  <th>전화번호</th>
+</tr>
+<tr>
+  <td>다이앤</td>
+  <td>100</td>
+  <td>01011111111</td>
+</tr>
+<tr>
+  <td rowspan="2">홍길동</td>
+<td colspan="2">100</td>
+</tr>
+
+<tr>
+  <td>10</td>
+  <td>01012222222</td>
+</tr>
+</table>
+
+<!--semantic tag-->
+
+<header>
+  <nav>
+    <ul>
+      <li><a>menu1</a></li>
+      <li><a>menu2</a></li>
+      <li><a>menu3</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <h2>경제</h2>
+    <article></article>
+  </section>
+  <section>
+    <h2>사회</h2>
+  </section>
+  <section></section>
+</main>
+<footer>footer</footer>
 </body>
 </html>
