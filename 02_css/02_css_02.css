@@ -1,0 +1,53 @@
+li {
+  color: red;
+}
+/*클래스 선택자: .클래스이름*/
+.orange {
+  color: orange;
+}
+/*아이디 선택자 : #아이디이름*/
+#blue {
+  color: blue;
+}
+/*일치 선택자*/
+span.orange {
+  background-color: yellow;
+}
+
+ul > .orange {
+  background-color: red;
+}
+
+/*하위선택자*/
+
+div .orange {
+  text-decoration: line-through;
+}
+a:hover {
+  color: white;
+  background-color: black;
+}
+a:active {
+  background-color: red;
+}
+
+/*인접형제*/
+
+.orange + li {
+  color: goldenrod;
+}
+
+/*일반형제 선택자 : 선택자 ~ 선택자 */
+
+.orange ~ li {
+  background-color: aqua;
+}
+
+a:hover {
+  color: white;
+  background-color: black;
+}
+
+a:active {
+  background-color: red;
+}
