@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "HSSaemaul-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSSaemaul-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JNE-Yuna-TTF-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-1@1.0/JNE-Yuna-TTF-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.box {
+  width: 700;
+  /*px,em, rem,%등으로 지정
+  --em: 상위 요소 크기의 ??배로 하겠다
+  --rem: 문서의 최상위 요소, html요소 크기의 몇 배로
+  */
+  height: 200px;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 4; /*요소의 글꼴 크기의 배수로 지정*/
+  text-align: center;
+  color: rgb(255, 110, 129);
+  font-family: "Anton", sans-serif;
+}
+
+.google {
+  font-family: "JNE-Yuna-TTF-Regular";
+  color: white;
+  background-color: rgb(255, 220, 235);
+  font-size: larger;
+}
+.noon {
+  font-family: "HSSaemaul-Regular";
+  color: rgb(255, 81, 142);
+  text-align: center;
+}
+
+* {
+  background-color: rgb(247, 255, 244);
+}

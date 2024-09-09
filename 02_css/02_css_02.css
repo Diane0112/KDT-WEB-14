@@ -51,3 +51,45 @@ a:hover {
 a:active {
   background-color: red;
 }
+
+.fruits span:first-child {
+  color: red;
+}
+.fruits div:first-child {
+  color: orange;
+}
+.fruits h3:last-child {
+  color: red;
+}
+/*n th-child(n) ABC가 형제 요소중 n번째*/
+.fruits *:nth-child(2) {
+  color: aqua;
+}
+.fruits *:nth-child(2n) {
+  background-color: yellow;
+}
+.fruits *:nth-child(2n + 1) {
+  background-color: green;
+}
+/*abc*/
+.fruits *not(span) {
+  text-decoration: line-through;
+}
+
+/*가상 요소 선택자*/
+/**/
+.fruits::before {
+  content: "과일 목록 시작";
+}
+.fruits::after {
+  content: "과일 목록 끝";
+}
+
+/*속성 선택자*/
+[readonly] {
+  background-color: aqua;
+}
+
+input:not([placeholder]) {
+  background-color: blue;
+}
