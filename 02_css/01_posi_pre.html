@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>과제</title>
+    <style>
+      body {
+        margin: 0;
+        background: linear-gradient(rgb(187, 255, 239), rgb(231, 255, 161));
+        height: 2000px;
+      }
+      .container {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        background-color: antiquewhite;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        background-color: white;
+      }
+      .relative {
+        position: relative;
+        left: 50px;
+        top: 30px;
+        background-color: rgb(250, 168, 226);
+      }
+      .relative:hover {
+        opacity: 0;
+      }
+      .absolute {
+        position: absolute;
+        right: 30px;
+        bottom: 100px;
+      }
+      abs .fixed {
+        position: fixed;
+        right: 100px;
+        top: 100px;
+      }
+
+      .static {
+        position: static;
+        background-color: rgb(12, 0, 143);
+        width: 100%;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="static">원래위치</div>
+      <div class="relative">item1</div>
+      <div class="absolute">item2</div>
+      <div class="fixed">item3</div>
+    </div>
+  </body>
+</html>

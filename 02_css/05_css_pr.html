@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        position: relative;
+        width: 300;
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: aqua;
+        position: absolute;
+      }
+      .circle1 {
+        top: 230px;
+        left: 200px;
+        background-color: blue;
+        position: absolute;
+        z-index: 6;
+      }
+      .circle2 {
+        top: 210px;
+        left: 150px;
+        background-color: rgb(46, 46, 179);
+        position: absolute;
+        z-index: 5;
+      }
+      .circle3 {
+        top: 161px;
+        left: 100px;
+        background-color: rgb(56, 56, 133);
+        position: absolute;
+        z-index: 4;
+      }
+      .circle4 {
+        top: 163px;
+        left: 50px;
+        background-color: rgb(17, 17, 76);
+        position: absolute;
+        z-index: 3;
+      }
+      .circle5 {
+        top: 110px;
+        left: 0px;
+        background-color: rgb(31, 31, 168);
+        position: absolute;
+        z-index: 2;
+      }
+      .eye {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        border: 3px solid black;
+        position: absolute;
+        top: 200px;
+        left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>z-index실습</h3>
+    <div class="eye1">
+    </div<div class="eye2"></div>
+    <div class="parent">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+      <div class="circle circle3"></div>
+      <div class="circle circle4"></div>
+      <div class="circle circle5"></div>
+    </div>
+  </body>
+</html>

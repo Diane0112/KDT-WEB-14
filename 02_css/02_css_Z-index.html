@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        position: relative;
+        width: 300px;
+        border: 3px dotted blue;
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: aqua;
+      }
+
+      .circle1 {
+        top: 0;
+        left: 200px;
+        z-index: 0;
+        background-color: aquamarine;
+      }
+      .circle2 {
+        top: 0;
+        left: 150px;
+        z-index: 1;
+        background-color: beige;
+      }
+      .circle3 {
+        top: 0;
+        left: 100px;
+        z-index: 2;
+        background-color: blue;
+      }
+      .circle4 {
+        top: 0;
+        left: 50px;
+        z-index: 1;
+        background-color: blueviolet;
+      }
+      .circle5 {
+        top: 0;
+        left: 0px;
+        z-index: 0;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <h3>X-index</h3>
+  <div class="parent">
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+    <div class="circle circle4"></div>
+    <div class="circle circle5"></div>
+  </div>
+  <body></body>
+</html>
