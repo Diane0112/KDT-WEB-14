@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습</title>
+
+    <style>
+      div {
+        font-size: 16px;
+        font-family: "Oswald", sans-serif;
+        animation-name: anim;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-duration: ease;
+        animation-delay: 1s;
+        position: relative;
+      }
+      @keyframes anim {
+        from {
+          opacity: 0%;
+          transform: translate3d(-100, 0, 0);
+          margin-left: 100%;
+          width: 2000%;
+        }
+
+        to {
+          opacity: 100%;
+          margin-left: 0%;
+          width: 100%;
+          transform: translateZ(100, 0, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      "As I relax on the sofa and gaze around a room a thought hits me: this is
+      exactly the place I've been looking for all my life. A little hideaway in
+      some sinkhole somewhere. I'd always thought of it as a secret, imaginary
+      place, and can barely believe that it actually exists. I close my eyes and
+      take a breath, and wonder of it all settles over me like a gentle cloud."
+    </div>
+  </body>
+</html>
