@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*all*/
+      .all {
+        background-color: red;
+      }
+
+      @media all and (min-width: 300px) {
+        .all {
+          font-size: 2rem;
+          background-color: aqua;
+        }
+      }
+      @media print and (min-width: 300px) {
+        .print {
+          font-size: 2rem;
+        }
+      }
+      @media screen and (min-width: 300px) {
+        .screen {
+          font-size: 2rem;
+        }
+      }
+      /*작성하지 않는 경우*/
+      /*기본으로 all로 wjrdyd*/
+      @media (min-width: 300px) {
+        .nomedia {
+          font-size: 2rem;
+        }
+      }
+      @media all {
+        .all {
+          font: size 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="all">all</div>
+    <div class="print">print</div>
+    <div class="screen">screen</div>
+    <div class="no-media">no-media</div>
+  </body>
+</html>

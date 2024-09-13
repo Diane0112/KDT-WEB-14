@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습</title>
+    <style>
+      div {
+        width: 50px;
+        height: 50px;
+        background-color: skyblue;
+        margin-bottom: 10px;
+      }
+
+      @media screen and (min-width: 700px) {
+        .item {
+          background-color: black;
+          display: inline-block;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .item {
+          background-color: skyblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </body>
+</html>
