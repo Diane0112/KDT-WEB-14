@@ -1,0 +1,172 @@
+)<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <ti>type</ti/tle>
+    <script>
+      /*자료형
+      -기본
+      -string : 문자열
+      -number : 숫자열
+      -booleen :참, 거짓
+      -null : 아무것도 없는
+      -unefined : 정의되지 않은
+
+      -객체
+      -arrey(배열):데이터를 순차적으로 저장
+      -objert(객체
+    
+      */
+
+     //1.string
+      let myName = "길동";
+      let email = "gildong@naver.com";
+      let city = '"서울"';
+
+      console.log(myName);
+      console.log(email);
+      console.log(city);
+
+ //1문자와 변수를 동시에
+    
+      console.log("내 이름은",myName,"이고 이메일은",email,"입니다.");
+      // ,로 이어 붙이기
+      console.log("내 이름은" + myName + "이고 이메일은 " + email + "입니다.");
+        // +로 이어붙이기
+      // 탬플릿 리터럴
+      console.log(`내 이름은 ${myName}이고 이메일은 ${email} 입니다.`);
+      let gildong = `내 이름은 ${myName}이고 이메일은 ${email} 임니다.`
+      console.log(gildong)
+    
+      //2.number
+      let number = 123;
+      let opacity = 0.7;
+      console.log(number);
+      console.log(opacity);
+
+      console.log("apple - 3")
+
+//3.booleen
+      let checked = true;
+      let uncheked = false;
+
+      console.log(checked);
+      console.log(uncheked);
+//4.undefined
+      let undef;
+      console.log(undefined);
+//5.null
+      let empty = null;
+      console.log+(empty);
+      
+      //6.array
+
+    
+      let fruits = ["orenge","pineapple","grape","apple"];
+      let fruits2 = new Array("orenge","pineapple","grape","apple");
+
+      console.log(fruits);
+      console.log(fruits[0],fruits[1])
+
+let deata1= [1, "gildong", false, null,undefined];
+console.log(deata1)
+//배열 속성, 함수0
+
+console.log("length", fruits.length);//길이
+fruits.push("melon");
+console.log("push",fruits);
+
+//object(객체) : key - Value 형태로 이루어진 데이터
+// 7.object
+
+let cat = {
+  name: "나비",
+  age: 1,
+  isCute: true,
+  new: function(){
+    console.log("냐옹");
+    return "냐옹";
+}
+}
+console.log(cat.name);
+console.log(cat.age);
+console.log(cat.isCute);
+console.log(cat.new());
+
+//대괄호 표기법
+//객체이름['key 이름']>반환값 = value
+
+console.log(cat["name"]);
+
+//typeof 사용
+
+let und;
+console.log(typeof"문자열");
+console.log(typeof 123);
+console.log(typeof true);
+console.log(typeof cat); //object
+console.log(typeof fruits);//object
+console.log(typeof NaN);//number
+console.log(typeof null);Object
+console.log(typeof und);
+
+
+//형변환
+
+let mathScore = prompt("수학 점수를 입력하세요");
+let engScore = prompt("영어 점수를 입력하세요");
+
+let avg = (mathScore + engScore)/2;
+
+console.log(avg);
+
+//문자 형변환
+//String(변환할 값) or변환할 값.toString()
+//toString()> null,undefined 사용x
+let str1 = true;
+let str2 = 123;
+let str3 = null;
+
+console.log(String(str1));
+console.log(typeof String(str1));
+console.log(typeof str1);
+
+console.log(str1.toString());
+console.log(typeof str1.toString());
+console.log(typeof toString());
+
+console.log(String(str3));
+//console.log(str3.toString());
+
+//숫자 형변환
+//Number(변환할 값)
+let n1 = true
+let n2 = false
+let n3 = "123.9"
+
+console.log(Number(n1));//1
+console.log(Number(n2));//0
+console.log(Number(n3));//
+
+//증가 연산자
+
+let result1, result2;
+let num1 = 10, num2 =10
+
+result1 = num1++;
+console.log("result1",result1);
+console.log("num1",num1);
+
+
+result2 = ++num2;
+console.log("result12",result2);
+console.log("num2",num2);
+
+
+//
+    </script>
+  </head>
+
+  
+  <body></body>
+</html>
