@@ -1,0 +1,111 @@
+<html>
+
+</html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"
+    integrity="sha256-Fb0zP4jE3JHqu+IBB9YktLcSjI1Zc6J2b6gTjB0LpoM=" crossorigin="anonymous"></script>
+  <!-- TODO1: jQuery CDN 불러오기 -->
+  <style>
+    div {
+      width: 100;
+      height: 100;
+    }
+
+    div:hover {
+      cursor: pointer;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .orange {
+      background-color: orange;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .purple {
+      background-color: purple;
+    }
+  </style>
+
+  <script>
+
+
+
+    // TODO2: changeColor 함수 내부 작성
+    function changeColor() {
+      let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+
+      let i = Math.floor((Math.random()) * 4);
+
+
+      // colors[i]
+      //console.log(colors[i])
+      //$("div").remove("corlor")
+      //$("div").addClass(colors[i])
+      const a = $("div").attr("class")
+      console.log(a)
+      const color = colors.indexOf(a)
+      console.log(color)
+      colors.splice(color, 1)
+      console.log(colors)
+      $("div").switchClass(a, colors[i], 100)
+
+      // if ($("div").hasClass("red")) {
+      //   colors.pop("red")
+      //   $("div").switchClass("red", colors[i], 100)
+      //   console.log(colors)
+      // } else if ($("div").hasClass("orange")) {
+      //   colors.pop("orange")
+      //   $("div").switchClass("orange", colors[i], 100)
+      // }
+
+    }
+
+
+
+
+    //$("div").switchClass("red", colors[mat], 500)
+
+    //true or false 반환
+    /*if ($("div").hasClass("red")) {
+      $("div").switchClass("red", colors[mat], 500)
+    } else if ($("div").hasClass("orange")) {
+      $("div").switchClass("orange", colors[mat], 500)
+    } else if ($("div").hasClass("yellow")) {
+      $("div").switchClass("yellow", colors[mat], 500)
+    } else if ($("div").hasClass("green")) {
+      $("div").switchClass("green", colors[mat], 500)
+    } else if ($("div").hasClass("blue")) {
+      $("div").switchClass("blue", colors[mat], 500)
+    } else if ($("div").hasClass("purple")) {
+      $("div").switchClass("purple", colors[mat], 500)
+    }
+*/
+
+
+
+
+  </script>
+</head>
+
+<body>
+  <div class="red" onclick="changeColor();"></div>
+</body>
+
+</html>

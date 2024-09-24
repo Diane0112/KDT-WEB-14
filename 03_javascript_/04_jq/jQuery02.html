@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>jquery 요소추가</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script>
+
+    //prepend
+    function prependJs() {
+      let ul = document.querySelector(".colors");
+      let li = document.createElement("li");
+      li.innerText = "prepend()로 추가된 JS";
+      ul.prepend(li);
+    }
+    function prependJquery() {
+      $(".colors").prepend("<li>prepend()로 추가된 Jquery</li>")
+    }
+
+    //after()
+    function afterJs() {
+      let green = document.querySelector(".green")
+      let li = document.createElement("li")
+      li.innerText = "after()형제요소로 추가된js"
+
+      green.after(li);
+
+      function afterJquery() {
+        $(".green").after("<li>after형제요소로 추가된j뼏교</li>")
+      }
+    }
+    //before
+
+    function beforeJs() {
+      let green = document.querySelector(".green")
+      let li = document.createElement("li")
+      li.innerText = "before()형제요소로 추가된js"
+
+      green.before(li);
+    }
+    function beforeJquery() {
+      $(".green").before("<li>after형제요소로 추가된j뼏교</li>")
+    }
+
+    function removejs() {
+      let li = document.querySelector(".green")
+      li.remove();
+
+
+    }
+    function remobeJquery() {
+      $(".green").remove();
+    }
+
+    function emptyJquery() {
+      $(".colors").empty
+    }
+
+
+
+
+  </script>
+</head>
+
+<body>
+  <h2>요소 추가하기
+
+    <ul class="colors">
+      <li>orange</li>
+      <li class="green">green</li>
+      <li>navy</li>
+    </ul>
+    <h3>aooend() : 선택된 요소의 맨 마지막 자식으로 추가</h3>
+    <button onclick="appendJs()">js로 바꾸기</button>
+    <button onclick="appendJquery()">jQuery로 바꾸기</button>
+    <button onclick="prependJs()">jQuery로 바꾸기</button>
+    <button onclick="prependJquery()">jQuery로 바꾸기</button>
+
+
+    <button onclick="afterJS()">js로 바꾸기</button>
+    <button onclick="afterJquery()">jQuery로 바꾸기</button>
+    <button onclick="beforeJs()">b</button>
+    <button onclick="beforeJquery()">jQuery로 바꾸기</button>
+
+    <h3> remobe():선택된 요소 삭제</h3>
+    <button onclick="removeJs()">jQuery로 바꾸기</button>
+    <button onclick="removeJquery()">jQuery로 바꾸기</button>
+
+    <h3> empty():선택된 요소의 자식요소 삭제</h3>
+    <button onclick="emotyJs()">jQuery로 바꾸기</button>
+    <button onclick="emotyjquery()">jQuery로 바꾸기</button>
+
+
+
+
+
+</body>
+
+</html>

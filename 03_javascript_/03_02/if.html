@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건문</title>
+    <script>
+      /**
+       * if(조건1){
+       * // 조건이 참일 때 실행될 코드
+       *
+       * }
+       * elseif{
+       * 조건 2가 참일 때 실행될 코드
+       * 조건이 여러개 일때만 작성하면 됨 (생략가능)
+       * }
+       * esle[
+       * //위의 모든 조건들이 부합하지 않을 때 실행될 코드
+       * //조건]
+       *
+       * /
+       **/
+
+      if (3 > 5) {
+        //거짓
+        console.log("3 > 5"); //출력안됨
+      }
+      if (3 < 5) {
+        console.log("d < 5");
+      }
+
+      let name = "황";
+
+      if (name == "이") {
+        console.log("이");
+      } else if (name == "김") {
+        console.log("김");
+      } else if (name == "박") {
+        console.log("박");
+      } else {
+        console.log("전부거짓");
+      }
+
+      switch (name) {
+        case "김":
+          console.log("김");
+          break; //스위치문 탈출
+        case "이":
+          break;
+          console.log("이");
+        case "황":
+          console.log("황");
+          break;
+        default:
+          //
+          console.log("default");
+      }
+
+      //3항 연산자
+      //조건 ? 참일 때 : 거짓일 때
+      let a = 10;
+      if (a > 10) {
+        console.log("a가 10보다 크지 않다");
+      }
+
+      a > 10
+        ? console.log("a가 10보다 클때")
+        : console.log("a가 10보다 크지 않을때");
+
+      let b = a > 10;
+    </script>
+  </head>
+  <body></body>
+</html>

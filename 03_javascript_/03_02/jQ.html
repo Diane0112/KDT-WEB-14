@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script>
+
+    function findParent() {
+      console.log($(".child2").parent());
+
+    }
+    function findParetns() {
+      console.log($(".child2").parents());
+
+    }
+    function findPa2() {
+      console.log($(".child2").next());
+
+    }
+    function findPa3() {
+      console.log($(".child2").prev());
+
+    }
+    function findchildren() {
+      console.log($(".parent").children());
+
+    }
+
+  </script>
+</head>
+
+<body>
+  <h2>요소탐색</h2>
+  <div class="parent">
+    <div>자식1</div>
+    <div class="child2">자식2</div>
+    <div>자식3</div>
+  </div>
+  <button onclick="findParent()">부모찾기</button>
+  <button onclick="findParetns()">조상 찾기</button>
+  <button onclick="findPa2()">부모찾기</button>
+  <button onclick="findPa3()">부모찾기</button>
+  <button onclick="findchildren()">모든 자식 찾기</button>
+</body>
+
+</html>
