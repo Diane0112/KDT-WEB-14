@@ -1,12 +1,10 @@
 <html>
 
+</html>
+
 <head>
   <meta charset="UTF-8" />
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"
-    integrity="sha256-Fb0zP4jE3JHqu+IBB9YktLcSjI1Zc6J2b6gTjB0LpoM=" crossorigin="anonymous"></script>
 
   <title>내 스케줄</title>
 
@@ -197,33 +195,34 @@
   </table>
 
   <script>
-    let target;
-    $('td > p').on('click', function () {
-      console.log(this)
-      console.log($(this).text());
-      $('#date').val($(this).text());
-      target = this;
-    })
+    let target; //클릭한 요소를 저장
+
+    //날짜 클릭했을 때 이벤트 함수
+    $("td > p").on("click", function (e) {
+      console.log(e.target)
+      console.log(e.target.textContent);
+      //jQuery
+      console.log($(e.target).text());
+      //  날짜 input요소에 넣어주기
+
+      $("#date").val($(e.target).text());
+      target = e.target;
+    });
+
+
+
+
 
     function writeSchedule() {
-      let content = $('#content').val();
-
-      $(target)
-        .parent()
-        .append('<span>' + content + '</span><br />')
-
-      $('#content').val('');
-      $('#date').val('');
-
-
-
-
-
-
       // 이 함수를 채워주세요.
+
+      //날짜, 내용 입력칸에  
+      let content = $("#content").val();
+      $(target).parent().append(`<span>${content}</span><br/>`)
+
+      $("#content").val("")
+      $("#date").val("")
     }
-
-
   </script>
 </body>
 
