@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습</title>
+    <style>
+        div{
+position: relative;
+margin: auto;
+        }
+
+        img{
+            width: 300px;
+           height: 200px;
+
+        }
+        #bird1{
+            position: absolute;
+            z-index: 3;
+            transform: skewy(10deg);
+            left:0px;
+            top: 50px;
+
+        }
+        #bird2{
+            position: absolute;
+            z-index: 2;
+            transform: skewy(10deg);
+            left: 150px;
+            top: 50px;
+
+        }
+        #bird3{position: absolute;
+            z-index: 1;
+            transform: skewy(10deg);
+            left: 300px;
+            top: 50px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <img id="bird1" src=https://cdn.pixabay.com/photo/2024/09/05/12/55/white-cheeked-turaco-9024880_640.jpg>
+    </div>
+    <div>
+        <img id="bird2" src=https://cdn.pixabay.com/photo/2024/09/05/12/55/white-cheeked-turaco-9024880_640.jpg>
+    </div>
+    <div>
+        <img id="bird3" src=https://cdn.pixabay.com/photo/2024/09/05/12/55/white-cheeked-turaco-9024880_640.jpg>
+    </div>
+</body>
+</html>
